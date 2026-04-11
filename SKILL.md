@@ -1,11 +1,11 @@
 ---
 name: linkedin-writer
-description: Write LinkedIn posts in the author's distinctive voice and style. Use when the user wants to draft a LinkedIn post, write a LinkedIn update, compose social content for LinkedIn, or convert rough notes/ideas/articles into a LinkedIn post. Accepts any input format: bullet points, rough notes, article summaries, or just a topic/thesis. Produces posts that match the author's contrarian, framework-driven, short-paragraph style while avoiding AI-generated writing patterns.
+description: Write LinkedIn posts in Jimit Joshi's distinctive voice and style. Jimit is CEO & Founder of Evolvision Technologies, building TalentLens — an AI-powered interview platform for Indian hiring agencies. Use when the user wants to draft a LinkedIn post, write a LinkedIn update, compose social content for LinkedIn, or convert rough notes/ideas/articles into a LinkedIn post. Accepts any input format: bullet points, rough notes, article summaries, or just a topic/thesis. Produces posts that match Jimit's direct, builder-credible, India-first, problem-first style while avoiding AI-generated writing patterns. Campaign goal: build awareness of TalentLens and onboard pilot agencies (target: 10 founding partners).
 ---
 
-# LinkedIn Post Writer
+# LinkedIn Post Writer — Jimit Joshi / TalentLens
 
-Write LinkedIn posts that sound like the author, not like AI.
+Write LinkedIn posts that sound like Jimit Joshi: a builder-founder who ships products, not a commentator who talks about them.
 
 ## Content Pillars
 
@@ -39,7 +39,43 @@ Accept any form of rough material:
 7. **Draft using the author's structure**: Hook -> Problem -> Framework -> Action -> Engagement question. Match the tone to the selected content pillar.
 8. **Apply anti-slop check**: Scan output against banned phrases and structures from [references/style-guide.md](references/style-guide.md). Rewrite any flagged patterns. Ensure zero em-dashes in the output.
 9. **Shareability check**: Ask yourself — "Would someone repost this to their team or colleague?" If not, increase the practical value density. Frameworks, checklists, and systems are inherently shareable. Vague opinions are not.
-10. **Image recommendation**: After presenting the draft, assess whether the post would benefit from a companion image (e.g., a visualized framework, handwritten checklist, or infographic). If yes, ask the user: "This post could hit harder with a visual of [specific element]. Want me to create one?" Only suggest when there's a clear visual element (named framework, checklist, step-by-step process). Don't suggest for personal stories or reflective posts.
+10. **Image generation (mandatory for every post)**: Every post gets a visual. After the user approves the draft, immediately **run** `tools/generate_visual.py` via the Bash tool — do not ask, do not show the command, just execute it. Choose the right template based on the post's primary content type:
+
+    - **Framework card** — post has a named framework with 3-5 labelled items. Use `--tag 'For Hiring Agencies'` (or the relevant audience label) for problem/pain posts; use `--tag 'Framework'` (default) only for solution-focused posts. Use `--hook` for a red problem statement line below the tag when the post leads with a pain point:
+      ```
+      python tools/generate_visual.py framework \
+        --day N \
+        --tag 'For Hiring Agencies' \
+        --hook 'One-line problem statement here.' \
+        --title 'FRAMEWORK NAME' \
+        --items 'Label 1:Description 1' 'Label 2:Description 2' 'Label 3:Description 3'
+      ```
+
+    - **Stat card** — post leads with a bold number or pricing claim:
+      ```
+      python tools/generate_visual.py stat \
+        --day N \
+        --headline '₹4/min' \
+        --subtext 'Supporting line here' \
+        --context 'Comparison or context line (optional)'
+      ```
+
+    - **Process flow** — post has a numbered step sequence:
+      ```
+      python tools/generate_visual.py process \
+        --day N \
+        --title 'PROCESS TITLE' \
+        --steps 'Step one' 'Step two' 'Step three' 'Step four'
+      ```
+
+    - **Quote card** — personal story, reflective, or founder POV post with no framework. Pull the single strongest line from the post:
+      ```
+      python tools/generate_visual.py quote \
+        --day N \
+        --quote 'The key line from the post goes here.'
+      ```
+
+    Replace N with the campaign day number. Use single quotes in the command so `$` and special characters survive the shell. All files save to `output/Day-N_YYYY-MM-DD/` alongside the post text file.
 
 ## Hook Construction (Critical)
 
@@ -107,4 +143,6 @@ Match the tone to the input material. Not every post needs a framework; some are
 
 1. **Draft**: Present the post in the conversation using markdown formatting for readability (bold, etc.). No meta-commentary like "Here's your post:" — just the post itself.
 2. **Confirm**: After presenting the draft, ask the user to confirm or request changes. Iterate until the user approves.
-3. **Export**: Once approved, save a LinkedIn-ready `.txt` file to the working directory. **Never overwrite existing files.** Use a timestamped filename: `linkedin-post-YYYY-MM-DD-HHMMSS.txt` (e.g., `linkedin-post-2026-03-08-143052.txt`). This file must be plain text with zero markdown: no `**bold**`, no `*italics*`, no `#` headings. Only line breaks, emojis, and plain text. This is what the user will copy-paste directly into LinkedIn.
+3. **Export**: Once approved, save a LinkedIn-ready `.txt` file to `output/Day-{N}_{YYYY-MM-DD}/`. N is the campaign day number — infer it from context (e.g. "draft Post 1" → Day 1) or ask if unclear. **Never overwrite existing files.** Filename: `linkedin-post-YYYY-MM-DD-HHMMSS.txt`. This file must be plain text with zero markdown: no `**bold**`, no `*italics*`, no `#` headings. Only line breaks, emojis, and plain text. This is what the user will copy-paste directly into LinkedIn.
+
+   After exporting, remind the user to run `python tools/track.py` to see campaign status, and `python tools/track.py post Day-{N}` after they've posted it.

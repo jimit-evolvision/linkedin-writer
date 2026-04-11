@@ -1,208 +1,198 @@
-# Writing Style Guide
+# Writing Style Guide — Jimit Joshi
 
 ## Voice & Tone
-- Direct, authoritative, anti-fluff. Never hedge or soften.
-- First-person experiences ground every argument ("I tracked...", "I've watched...", "I saw...")
-- Address reader as "you" constantly. Make it personal.
-- Contrarian: challenge popular narratives, then offer a better frame.
-- Practical over theoretical. Specific over vague.
-- Confident but not arrogant. Earned authority from doing, not preaching.
+- Builder-founder credibility: Authority comes from having shipped the product, not from theory or commentary.
+- Direct, no hedging. State the conclusion first, then the evidence.
+- India-first framing: Use ₹ for all pricing references. Reference Indian market context naturally, not as a qualifier.
+- Transparent about pre-launch: "We're pre-launch and looking for partners" is stronger than vague capability claims. Honesty is the brand.
+- Problem-first: Every post leads with the problem, not the product. The product earns its mention.
+- Engineering-driven precision: Numbers over adjectives. Specific over vague. "48 calls, 15 minutes each, 3 good fits" beats "a lot of wasted time."
+- First-person real experience: "I watched...", "I built...", "I tested...", "I talked to 15 agencies and..."
 
 ## Opening Hooks (First 1-2 Lines)
-The opening must stop the scroll. Patterns that work:
+Patterns that work for this author:
 
-**Contrarian claim:**
-- "AI didn't make that mistake. You did when you trusted it."
-- "The hottest job in tech right now isn't what you'd expect."
+**Cost/waste quantification:**
+- "Your agency spent 12 hours this week screening candidates. How many of them were proxies?"
+- "48 screening calls. 15 minutes each. By candidate 12, quality drops. By candidate 30, everyone passes."
 
-**Bold statement + "Stop.":**
-- "Stop. You're pattern-matching to the wrong precedent."
+**Uncomfortable industry truth:**
+- "Your next hire might not be the person you interviewed."
+- "Pre-recorded video interviews are not AI screening. They're video submissions with a better UI."
 
-**Provocative quote or headline, then dismantle it:**
-- '"OpenAI just killed 1,000 startups."'
+**Contrarian take on common belief:**
+- "'AI video interviews are the future of hiring.' Nine out of ten times, that means candidates record themselves answering fixed questions."
+- "Your ATS is not a screening tool. It never was."
 
-**Direct challenge to the reader:**
-- "Your AI-generated cover letter is getting you nowhere."
-- "If you think you're 'too busy' to learn AI, you're thinking wrong."
+**Builder observation:**
+- "I watched a 3-person recruiting team spend an entire Tuesday on screening calls. 48 candidates. Everyone passed."
+- "I talked to 15 Indian recruiting agencies this year. Most of them have a proxy interview story."
 
-**Pattern: short punchy line, then a follow-up that reframes.**
+**Direct pilot/offer hook:**
+- "10 slots. Free credits. Real interviews."
+- "We built AI that interviews candidates in real time. We need 10 agencies to break it."
+
+**Pattern: Lead with the specific observable moment, then reframe.**
 
 ## Paragraph Style
 - Ultra-short: 1-3 sentences maximum per paragraph.
 - One idea per paragraph.
-- Generous whitespace between paragraphs. Let ideas breathe.
+- Generous whitespace. Let each point land before the next one.
 - Never write dense blocks of text.
+- Numbers and specifics earn their own lines.
 
 ## Signature Transitions
-These are the author's authentic voice markers. Use them naturally (not every one in every post, pick 2-3 that fit):
-- "Here's the paradox:"
-- "The pattern is clear:"
-- "But here's the truth:"
-- "Let me be real."
-- "Here's what actually works:"
-- "Start here:"
-- "Here's the counterintuitive insight:"
-- "But here's the nuanced reality most miss:"
-- "The big takeaway?"
+Use 2-3 naturally per post. Don't force all of them:
+- "Here's what actually happens:"
+- "The pattern I keep seeing:"
+- "But here's what nobody talks about:"
+- "This is the real problem:"
+- "Here's the math:"
+- "What I learned:"
+- "The honest answer:"
+- "Start with this:"
+- "Here's what we built instead:"
 
 ## Post Structure (The Arc)
-Almost every post follows this skeleton:
+Most posts follow this skeleton:
 
-1. **Hook** (1-2 lines) - Contrarian claim or provocative opener
-2. **Problem/Context** (2-4 short paragraphs) - What most people get wrong, with evidence or anecdote
-3. **Named Framework** (the core) - A boldly titled framework, checklist, or mental model with 3-5 items
-4. **Actionable Steps** (1-3 paragraphs) - "Start here:" with concrete next moves
-5. **Closing Engagement Question** - "What's one [thing] you [verb]?" + pointing down emoji
+1. **Hook** (1-2 lines) — Observable problem moment or contrarian claim
+2. **Problem/Context** (2-4 short paragraphs) — Why this happens, what it costs, who it affects
+3. **Named Framework** (core) — A titled framework, checklist, or breakdown with 3-5 items
+4. **TalentLens connection** (optional, 1-2 lines) — Light mention only when earned by the post's argument
+5. **Closing CTA** — Engagement question, repost prompt, or PILOT comment CTA
 
-## Frameworks Are the Trademark
-- Almost every post introduces or references a named framework.
-- Framework names are bold, titled, and memorable: "The 3-Layer Survival Framework", "The Sparring Partner Framework", "Prove -> Scale -> Formalize"
-- Frameworks typically have 3-5 items, each with a bold label and a dash explanation.
-- If the raw material has a core insight, distill it into a named framework.
+## Frameworks Are the Credibility Signal
+- Almost every post introduces a named framework or structured breakdown.
+- Names should be specific and memorable: "The Integrity Stack", "The 4-Tool Problem", "The Screening Quality Curve"
+- 3-5 items, each with a bold label and a dash explanation.
+- Frameworks build shareability: hiring managers forward frameworks to their teams.
+
+## TalentLens Mention Rules
+- **Awareness posts (Phase 1):** No product mention. Build the problem. Let the credibility land first.
+- **Education posts (Phase 2):** Light mention only if the post naturally arrives at the solution. "What we built" framing, not "our product."
+- **Pilot posts (Phase 3):** Direct and clear. Name the offer, name the terms, name the CTA.
+- Never open a post with TalentLens. The product earns its mention by the end.
 
 ## Emoji Usage Rules
-Strategic, not decorative. Each emoji has a role:
-- Checkmark emojis for checklist items / do-this items
-- Fire emoji for standout or bold items
-- Pointing down/up emoji for engagement CTAs
-- Calendar emoji for timelines / week-by-week progressions
-- X emoji for anti-patterns / don't-do-this items
-- Target/rocket emoji sparingly for key emphasis
-- Pointing right emoji for bullet points in checklists
+Strategic, not decorative:
+- Pointing down emoji for PILOT CTAs and engagement questions
+- Checkmark or pointing right emoji for framework/checklist items
+- Calendar emoji for timelines or phased rollouts
+- X emoji for "don't do this" items in anti-pattern lists
+- Brain emoji for insight-heavy items
 
 **Rules:**
-- Never use more than 2-3 distinct emoji types per post.
-- Emojis appear at the START of bullet/list items, not inline in prose.
-- The closing question almost always has a pointing down emoji.
+- Never more than 2-3 distinct emoji types per post.
+- Emojis at the START of list items only, not inline in prose.
+- Closing CTA almost always has a pointing down emoji.
 
 ## Formatting
-- **Bold** for framework names, key phrases, and important terms.
-- *Italics* for emphasis on specific words (sparingly).
-- No em-dashes (—) ever. Use commas, periods, colons, or parentheses for asides and emphasis instead.
+- **Bold** for framework names, key phrases, important terms.
 - Numbered lists for step-by-step processes.
 - Bullet points with emoji prefixes for checklists.
+- No em-dashes (—) ever. Use commas, periods, colons, or parentheses instead. Zero exceptions.
 
 ## Vocabulary Patterns
 **Use frequently:**
-- "framework", "playbook", "mental checklist", "mental model"
-- "scar tissue", "production scars" (for real experience)
-- "pattern", "paradox", "signal vs noise"
-- "ship", "build", "debug" (action verbs)
-- "friction", "workflow", "bottleneck"
-- Concrete numbers and specifics ("47 hours", "$50/month", "30 minutes")
+- "screening", "shortlisting", "competency rubric", "integrity suite", "pilot"
+- "proxy interview", "pre-recorded", "real-time", "adaptive"
+- "ATS", "JD" (job description), "no-show", "drop-off", "call fatigue"
+- "volume hiring", "high-volume", "bulk screening", "batch"
+- "founding partner", "free credits", "structured feedback"
+- Specific numbers: "₹7/min", "₹4/min", "30 candidates", "10 pilot spots", "48 calls", "12 hours"
+- "we built", "I watched", "I tested", "I talked to" (real experience anchors)
+
+**Never use:**
+- "revolutionary", "game-changer", "cutting-edge", "innovative" (prove it with specifics instead)
+- "leverage", "synergy", "paradigm shift", "disruptive" (jargon without meaning)
+- "AI-powered" as a standalone claim (say what the AI actually does)
+- Generic superlatives: "best", "leading", "top" (without evidence)
 
 ## Closing CTAs (Choose One Per Post)
 
-Every post ends with a CTA. Pick the format that best fits the post's goal:
+### Option A: Engagement Question (awareness + education posts)
+- "What's the most common hiring fraud you've seen in your agency?" + pointing down emoji
+- "What tool in your current hiring stack causes the most friction?" + pointing down emoji
+- "What's one thing your current screening process genuinely can't do?" + pointing down emoji
+- Keep to one question. Directly related to the post's problem.
+- **Best for:** Problem posts, contrarian takes, technical hiring posts.
 
-### Option A: Engagement Question (default)
-- "What's one [thing] you [verb]?" format
-- "What's the thread you refuse to let go of?"
-- "What AI tool weakness costs you the most time?"
-- Include pointing down emoji at the end.
-- The question should relate directly to the post's theme.
-- Keep it to one question, not multiple.
-- **Best for:** Reflective posts, personal stories, opinion pieces.
+### Option B: PILOT Comment CTA (pilot campaign posts)
+- "If your agency screens 10+ candidates/month, comment PILOT. I'll reach out."
+- "Comment PILOT or DM me. 10 spots, first come first served."
+- "Comment PILOT below and I'll send you the details." + pointing down emoji
+- Short, clear, specific. No begging tone. State the constraint (10 spots).
+- **Best for:** Founder POV posts, direct pilot offer posts, any post that earns a product mention.
 
-### Option B: Repost Prompt (for maximum reach)
-- "Repost this if you want your team to see it."
-- "Share this with a founder who needs to hear it."
-- "Repost to save this for later."
-- Keep it to one short line. No begging tone.
-- **Best for:** Framework posts, checklists, tactical how-tos — anything people would want to reference again or share with colleagues.
-- **Why it matters:** Reposts are the #1 signal LinkedIn's algorithm uses to push content to more feeds. More reposts = more reach = more followers.
-
-### Option C: Engagement Question + Follow Prompt (for follower growth)
-- Engagement question first, then a soft follow prompt on the next line.
-- Example: "What's one workflow you're overcomplicating right now? 👇\nFollow me for more AI playbooks every week."
-- The follow prompt should state what they'll get by following (not just "follow me").
-- **Best for:** High-value posts where you're establishing authority on a topic.
-
-### Mixing CTAs
-- Don't use the same CTA type for every post. Rotate based on post goal.
-- Engagement questions build community. Repost prompts build reach. Follow prompts build audience.
-- When in doubt, default to Option A (engagement question).
+### Option C: Repost Prompt (framework + data posts)
+- "Repost this if you want your hiring team to see it."
+- "Share this with an agency head who's still doing manual phone screens."
+- One line only. No begging tone.
+- **Best for:** Framework posts, data/numbers posts, anything a hiring manager would forward to their team.
 
 ---
 
 # Anti-Slop Rules: Eliminating AI Writing Patterns
 
-This section is critical. The output must read as human-written, not AI-generated. Apply these rules ruthlessly.
-
 ## Banned Punctuation
-- **Em-dashes (—) are banned.** Never use them in any post. Replace with commas, periods, colons, or parentheses. This is a hard rule with zero exceptions.
+- **Em-dashes (—) are banned.** Replace with commas, periods, colons, or parentheses. No exceptions.
 
 ## Banned Phrases (Never Use)
-These are dead giveaways of AI-generated content:
-
 **Throat-clearing openers:**
 - "Here's the thing:" / "The uncomfortable truth is" / "It turns out"
-- "I'm going to be honest" / "Can we talk about" / "Here's what I find interesting"
-- "I'm excited to share..." / "Thrilled to announce..."
+- "I'm going to be honest" / "Can we talk about" / "Thrilled to announce"
 
 **Emphasis crutches:**
-- "Full stop." / "Period." / "Let that sink in."
-- "This matters because" / "Make no mistake" / "Here's why that matters"
-- "Read that again."
+- "Full stop." / "Let that sink in." / "Read that again."
+- "This matters because" / "Make no mistake"
 
-**Business jargon (plain language instead):**
-- "Navigate" (challenges) -> "handle", "deal with"
-- "Unpack" (analysis) -> "explain", "break down"
-- "Lean into" -> "accept", "commit to"
-- "Landscape" (context) -> "situation", "field", "world"
-- "Game-changer" -> say what specifically changed
-- "Double down" -> "commit", "increase"
-- "Deep dive" -> "analysis", "close look"
-- "Circle back" -> "return to", "revisit"
-- "Leverage" (as verb) -> "use"
-- "Synergy" -> never
-- "Paradigm shift" -> never
+**Business jargon:**
+- "Navigate" → "handle", "deal with"
+- "Lean into" → "accept", "commit to"
+- "Leverage" (as verb) → "use"
+- "Deep dive" → "close look", "analysis"
+- "Game-changer" → describe what specifically changed
+- "Synergy", "Paradigm shift" → never
 
-**Filler adverbs and empty openers:**
-- "At its core" / "In today's [X]" / "In a world where"
-- "It's worth noting" / "Interestingly," / "Importantly," / "Crucially,"
-- "At the end of the day" / "When it comes to" / "The reality is"
+**Filler openers:**
+- "At its core" / "In today's landscape" / "In a world where"
+- "It's worth noting" / "Interestingly," / "Importantly,"
+- "At the end of the day" / "When it comes to"
 
 **Meta-commentary:**
 - "Hint:" / "Plot twist:" / "Spoiler:"
 - "But that's another post"
-- "X is a feature, not a bug"
 
 **AI-overused intensifiers:**
-- "deeply", "truly", "fundamentally", "inherently", "simply", "literally", "inevitably"
-- "robust", "comprehensive", "cutting-edge", "seamless"
+- "deeply", "truly", "fundamentally", "inherently", "seamlessly", "robust", "comprehensive"
 
 ## Banned Structures
+**Binary contrast formula** (the #1 AI tell, mid-post):
+- "Not because X. Because Y." → State Y directly.
+- "[X] isn't the problem. [Y] is." → "The problem is Y."
 
-**Binary contrast formula** (the #1 AI tell):
-- "Not because X. Because Y." -> Just state Y directly.
-- "[X] isn't the problem. [Y] is." -> "The problem is Y."
-- "The answer isn't X. It's Y." -> State Y.
-- "It feels like X. It's actually Y." -> State Y with evidence.
-
-NOTE: The author DOES use "It's not X. It's Y." occasionally in hooks (e.g., "It's not prompt engineering. It's not vibe coding. It's communications.") This is acceptable ONLY as a hook/opener, never mid-post as a formulaic reframe.
+Exception: "It's not X. It's Y." is acceptable ONLY as a hook opener, never mid-post.
 
 **Performative simplicity:**
-- "[Noun]. That's it. That's the [thing]." -> Never.
+- "[Noun]. That's it. That's the post." → Never.
 
 **False reassurance:**
-- "And that's okay." / "Not always. Not perfectly." -> Cut these.
+- "And that's okay." / "Not always. Not perfectly." → Cut.
 
 **Rhetorical posturing:**
-- "What if I told you..." -> Make the point directly.
-- "Think about it." -> Trust the reader.
+- "What if I told you..." → Make the point.
+- "Think about it." → Trust the reader.
 
 ## Rhythm Anti-Patterns
 - Never stack 3+ sentences of identical length in a row.
 - Don't end every paragraph with a punchy one-liner. Vary endings.
-- Don't always use three-item lists. Two items or four are fine.
-- Don't answer rhetorical questions immediately. Let them breathe or cut the question.
+- Don't answer rhetorical questions immediately.
 - Avoid starting consecutive paragraphs with "So" or "Look,"
 
 ## The Authenticity Test
-Before finalizing, check:
-1. Would this sound natural if read aloud to a colleague?
-2. Could you identify which sentences were AI-generated? If yes, rewrite them.
-3. Are there any phrases a human would never organically type? Remove them.
-4. Does every sentence earn its place, or is anything just filler? Cut filler.
-5. Does it sound like a specific person wrote it, or could it be anyone? It must sound like the author.
+Before finalizing:
+1. Would this sound natural if read aloud to a hiring manager?
+2. Could you identify AI-generated sentences? If yes, rewrite them.
+3. Does every sentence earn its place? Cut filler.
+4. Does it sound like a specific person with a specific product, or could it be anyone? It must sound like Jimit.

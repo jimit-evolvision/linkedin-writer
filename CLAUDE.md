@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What This Repo Is
 
-A Claude Code **skill** (slash command) for writing LinkedIn posts in the author's (KVS Dileep's) voice. It is a pure-content repo — no build system, no tests, no dependencies. All files are Markdown.
+A Claude Code **skill** (slash command) for writing LinkedIn posts in Jimit Joshi's voice (CEO & Founder, Evolvision Technologies / TalentLens). The skill is customized for the TalentLens pre-launch campaign targeting Indian hiring agencies. It contains Markdown content files and one Python utility for generating post visuals locally.
 
 When installed at `~/.claude/skills/linkedin-writer/`, invoking `/linkedin-writer` triggers `SKILL.md` as the skill definition, which in turn references the four files in `references/`.
 
@@ -36,6 +36,28 @@ These are non-negotiable constraints embedded in the skill. Do not relax them:
 - **Export file must be plain text** — no `**bold**`, no `*italics*`, no `#` headings.
 - **Never overwrite an existing export file** — always use a timestamped filename.
 - **Anti-slop scan is mandatory** — banned phrases and banned structures are listed in `references/style-guide.md`. Every draft must pass before being shown.
+
+## Image Generator (`tools/generate_visual.py`)
+
+Generates structured 1080x1080 PNG visuals locally using Playwright (headless Chromium). No external API.
+
+**One-time setup:**
+```bash
+pip install playwright
+playwright install chromium
+```
+
+**Three templates:**
+
+| Template | Use for | Command |
+|---|---|---|
+| `framework` | Named frameworks with 3-5 items | `python tools/generate_visual.py framework --title "..." --items "Label:Desc"` |
+| `stat` | Big number or bold claim | `python tools/generate_visual.py stat --headline "₹4/min" --subtext "..."` |
+| `process` | Numbered step flows | `python tools/generate_visual.py process --title "..." --steps "Step 1" "Step 2"` |
+
+`--output` is optional. When omitted, the filename is auto-slugged from the title and saved under `output/YYYY-MM-DD/` for day-wise tracking. Pass `--output my-name.png` to override the filename (still saves under the dated folder).
+
+Generated PNGs are gitignored. The skill outputs the exact command to run after each qualifying post draft — the user runs it themselves.
 
 ## Customization Entry Points
 

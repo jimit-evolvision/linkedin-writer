@@ -30,7 +30,9 @@ Snap the reader in the OPPOSITE direction of the initial lean-in.
 - The bigger the gap between lean-in direction and snapback direction, the stronger the hook
 - This completes the curiosity loop — now they MUST keep reading
 
-## Example Breakdowns
+---
+
+## Example Breakdowns (General)
 
 **Tech/Product example:**
 - Lean-in: "The tech in the Vegas Sphere is insane. Biggest screen ever built, 20x bigger than an IMAX."
@@ -38,61 +40,79 @@ Snap the reader in the OPPOSITE direction of the initial lean-in.
 - Snapback: "Because the most impressive part is the audio."
 
 **B2B/Professional example:**
-- Lean-in: "There are three massive mistakes people make with their mortgage. The average person pays an extra $122,000 per year."
+- Lean-in: "There are three massive mistakes people make with their mortgage. The average person pays an extra $122,000."
 - Scroll stop: "Most people think it's because of high interest rates."
-- Snapback: "It turns out it has nothing to do with that. The biggest waste is actually coming from..."
+- Snapback: "It has nothing to do with that. The biggest waste is actually coming from..."
 
-**Author's existing hooks that follow this pattern:**
-- Lean-in: "AI didn't make that mistake." (stuns, establishes topic)
-- Scroll stop: "You did when you trusted it." (freezes — wait, it's MY fault?)
-- Snapback is implicit: the rest of the post reframes blame from AI to human judgment
+---
 
-- Lean-in: '"OpenAI just killed 1,000 startups."' (known narrative, lean in)
-- Scroll stop: "Stop. You're pattern-matching to the wrong precedent." (freeze)
-- Snapback: "I tracked 10 Google 'category killers'..." (opposite direction — history says otherwise)
+## TalentLens Campaign Hook Examples
+
+**Proxy interview hook:**
+- Lean-in: "Your next hire might not be the person you interviewed." (stuns, establishes topic)
+- Scroll stop: "This isn't a rare edge case." (freezes — wait, how common?)
+- Snapback: "I talked to 15+ Indian agencies this year. Most of them have a story." (opposite of what they assumed)
+
+**Pre-recorded video hook:**
+- Lean-in: "'We use AI video interviews to screen candidates at scale.'" (familiar claim, reader nods)
+- Scroll stop: "Nine out of ten times, that's not what's actually happening."
+- Snapback: "Candidates record themselves answering fixed questions. That's a video submission form."
+
+**Founder story hook:**
+- Lean-in: "I watched a 3-person recruiting team spend an entire Tuesday on screening calls." (real, specific)
+- Scroll stop: "By 6 PM, every candidate had passed to the next round."
+- Snapback: "Not because they were strong. Because call fatigue hits around candidate 12." (indicts the system)
+
+**Cost/waste hook:**
+- Lean-in: "To hire one backend developer, you typically need 6 different tools." (establishes shared pain)
+- Scroll stop: "And this is considered normal."
+- Snapback: "The candidate drops out at step 4. Your hiring manager blames the market." (reframes who's responsible)
+
+**Pilot offer hook:**
+- Lean-in: "10 slots. Free credits. Real interviews." (direct, benefit-forward, no setup)
+- No scroll stop needed — the directness IS the hook
+- Snapback is the offer itself: "We built AI that interviews candidates live. We need 10 agencies to break it."
+
+---
 
 ## Hook Amplifiers
 
 ### Lead with Benefit or Pain Point
-- Bad: "Here's how magnesium works as a supplement"
-- Good: "If you want better sleep, you need magnesium"
-- Always ask: what does the reader want to achieve or avoid? Lead with THAT, then introduce the mechanism.
+- Bad: "Here's how AI voice interviews work"
+- Good: "Your phone screen queue is costing you ₹12,000 in recruiter hours this week"
+- Always ask: what does the reader want to avoid? Lead with THAT.
 
 ### Cult Hopping (Known References)
-- Wrap unfamiliar ideas in familiar names, brands, or cultural references
-- People feel comfort hearing something known, feel alienated hearing only unknown concepts
-- Use well-known companies, people, or events as entry points to your argument
-- Don't build the whole post around the reference — just draft off its familiarity
+- Wrap the unfamiliar in familiar names: HireVue, HackerRank, Naukri, Greenhouse, Keka
+- "HireVue starts at $25,000/year" — everyone knows the pain point, now you've established the contrast
 
 ### Compress Speed to Value
-- On LinkedIn: the reader decides within the first 2 lines whether to tap "see more"
-- Frontload value. Give a quick hit of insight in or immediately after the hook
-- Anything after they scroll past is invisible
-- First hit of value buys enough attention for the second hit. Chain them.
+- The reader decides within the first 2 lines whether to tap "see more"
+- For hiring pain posts: frontload the number, the fraud, or the absurdity
+- "48 calls, 15 minutes each, everyone passed" tells the whole story in one line
 
-### Power Words in Hooks
-These words in the first 1-2 lines signal personal experience and specificity, which drives engagement:
-- **"I"** / **"I've"** — signals real experience, not theory ("I tracked 10 Google category killers...")
-- **"When"** — sets up a specific moment or scenario ("When I was building my first AI course...")
-- **"What"** — promises a reveal ("What most people miss about AI hiring...")
-- **"How"** — promises a system or process ("How I reduced research time by 70%...")
-
-Use these to start hooks, especially for behind-the-scenes and deep-work-systems posts. They pair naturally with the Context Lean-In step.
+### Power Words for This Campaign
+- **"I watched"** — real observation, not theory
+- **"I built"** — founder credibility
+- **"I talked to 15 agencies"** — scale of research
+- **"₹X/min"** — immediate market relevance
+- **"proxy"** — named phenomenon, signals insider knowledge
 
 ### Staccato Opening Sentences
 - Hook sentences: SHORT. Compressed. Max clarity per word.
-- Time is most scarce at the top. Increase value density per word.
-- Expand to medium and longer sentences only after the hook has landed.
-- This applies to the first 3-5 lines. After that, vary rhythm naturally.
+- "10 slots. Free credits. Real interviews." — three beats, three concepts, one line
+- "Your next hire might not be the person you interviewed." — 12 words, complete idea, full stop
+
+---
 
 ## Applying to LinkedIn Posts
 
-LinkedIn-specific adaptations of the formula:
+LinkedIn-specific adaptations:
 
-1. **The "see more" fold is your cliff edge.** The hook must be compelling enough in the first 2-3 visible lines to earn the click. Everything before the fold = your hook.
+1. **The "see more" fold is the cliff edge.** Hook must earn the click in the first 2-3 visible lines.
 
-2. **Visual hooks on LinkedIn = formatting.** Bold text, line breaks, short lines act as pattern interrupts in a wall of gray text. The first line should visually stand out.
+2. **The curiosity loop must survive the fold.** Scroll stop or snapback should land RIGHT at the fold boundary.
 
-3. **The curiosity loop must survive the fold.** The scroll stop or snapback should land RIGHT at or just after the "see more" boundary — so they MUST click to resolve the loop.
+3. **Benefit/pain framing beats topic framing.** "How TalentLens works" (topic) vs "Your phone screen queue has a proxy problem" (pain). Lead with what it means for THEM.
 
-4. **Benefit/pain framing beats topic framing.** "How to use AI agents" (topic) vs "Your switching costs are about to hit zero" (pain/implication). Lead with what it means for THEM.
+4. **For pilot posts:** Directness IS the hook. No slow build. "10 slots. Free credits." opens. The rest is the argument.

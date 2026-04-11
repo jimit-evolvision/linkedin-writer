@@ -1,155 +1,146 @@
-# Sample Posts (Reference Examples)
+# Sample Posts — Jimit Joshi / TalentLens
 
-These are representative posts showing the author's voice, structure, and style. Use them as tone calibration, not templates to copy.
-
----
-
-## Sample 1: Contrarian Opener + Named Framework
-
-AI can write your content. But only *you* can leave a fingerprint.
-
-In a world where 90% of content is AI-generated, **trust becomes the rarest currency.** Not reach or aesthetics or cleverness.
-
-What cuts through the noise? *Work with an outcome. Words with a purpose. Messages with a memory.*
-
-I've tried a lot of AI-assisted content experiments. They're polished. Practically flawless.
-
-But also... indistinct. There's no tension, no conviction—no *me*.
-
-That's when it clicked:
-
-**Your story is the one thing the algorithm can't clone.**
-
-To move from *Noise* to *Signal*, you need to infuse humanity into your process.
-
-Here's a framework I'm testing:
-
-- **Create a messy first draft** — no holds barred unfiltered thoughts.
-- **Anchor every post in a personal moment** — A win, a failure, a question I am still wrestling with or pondering about.
-
-And the most important:
-
-**If you've got nothing real to say, don't post.** Silence > Platitude.
-
-What's the fingerprint you leave in your work?
+5 calibration posts showing the target voice and style for this campaign. Use these for tone matching, not as templates to copy. These represent the voice Jimit is building toward: direct, India-aware, builder-credible, problem-first.
 
 ---
 
-## Sample 2: Data-Backed Contrarian + Checklist
+## Sample 1: Problem Post — The Proxy Interview Problem
 
-"OpenAI just killed 1,000 startups."
+Your next hire might not be the person you interviewed.
 
-Stop. You're pattern-matching to the wrong precedent.
+Proxy interviews are more common than any hiring platform will tell you.
 
-I tracked 10 Google "category killers" from 2013-2024. Here's what actually happened:
+A candidate sends a link to a friend who's better at interviews. The real candidate starts work on Monday. You find out 3 weeks in, when the performance gap becomes impossible to ignore.
 
-Google Reader shut down July 1, 2013. Feedly gained 3 million users in 14 days.
+This isn't rare.
 
-Stadia died January 18, 2023. GeForce Now hit 25 million users that same year.
+I've talked to 15+ Indian recruiting agencies this year. Most of them have a story. One had 4 proxies in a single batch of 20 technical hires.
 
-Google Optimize ended September 30, 2023. Optimizely's revenue kept climbing.
+The cost isn't just one bad hire. It's the retainer fee. The onboarding time. The notice period. The repeat search.
 
-But here's the paradox:
+And your current screening process has no way to detect it.
 
-The startups that survived weren't the ones who out-engineered Google. They were the ones who understood what Google wouldn't commit to.
+Here's what actually detects a proxy:
 
-Here's what actually works:
+**The Integrity Stack**
+- **Face liveness detection** — Is the person on screen a live human, or a photo/recording?
+- **Multi-voice detection** — Is there a second person coaching from off-screen?
+- **Naturalness scoring** — Are the answers too rehearsed to be spontaneous recall?
+- **Eye movement tracking** — Is attention consistent with genuine thinking?
 
-**The 3-Layer Survival Framework**
+No single signal is conclusive. All four together are hard to fake.
 
-- **Layer 1: Distribution Lock** — Own a channel big tech can't buy. Feedly owned RSS power users. Google wanted casual readers.
-- **Layer 2: Workflow Depth** — Solve the 20% that takes 80% of the time. Optimizely built enterprise workflows. Google built features.
-- **Layer 3: Community Moat** — Create switching costs beyond the product. GitHub wasn't just code hosting. It was developer identity.
-
-The pattern is clear:
-
-Big tech launches broad. Startups win narrow. Big tech optimizes for TAM. Startups optimize for devotion. Big tech builds features. Startups build religions.
-
-What "startup killer" did you survive? 👇
+What's the most common hiring fraud you've seen in your agency? 👇
 
 ---
 
-## Sample 3: Personal Story + Practical Advice
+## Sample 2: Contrarian Take — Pre-Recorded Video Is Not AI Screening
 
-I did something super out of my comfort zone recently. I did my first podcast with Workwise with Naukri, answering the questions nobody's asking about AI hiring.
+"We use AI video interviews to screen candidates at scale."
 
-I spoke about what's actually broken in the AI job market right now.
+Nine out of ten times, that means: candidates record themselves answering fixed questions, and a hiring manager watches the recordings later.
 
-Not the usual "AI is transforming everything" fluff.
+That's a video submission form. Not an interview.
 
-The real questions:
+The problem isn't the AI. The problem is the format.
 
-👆**Why are companies hiring AI talent with no idea what to do with them?**
+A fixed-question recording can't follow up. It can't probe a vague answer. It can't tell whether a candidate is nervous or genuinely doesn't know the answer.
 
-👆**How do you hire for a field that didn't exist 18 months ago?**
+Real screening requires adaptation.
 
-👆**Should you aim to be a generalist or a specialist when the rules change every 3 months?**
+**What adaptive actually means:**
+- **Follow-up on incomplete answers** — "You mentioned X. Can you walk me through how that worked?"
+- **Competency depth** — If the candidate is strong, go deeper. If weak, pivot to adjacent skills.
+- **Real-time evaluation** — Score each answer as it happens, against a weighted rubric. Not after you've watched 50 recordings in a row with tired eyes.
 
-These aren't hypothetical. These are the questions I'm seeing in my DMs. From fresh grads. From 10-year veterans. From hiring managers who have no clue what "AI generalist" actually means.
+Pre-recorded video was a reasonable workaround in 2020 when remote interviewing was new. The bar has moved.
 
-I put the link to the episode in the comments. Do share your feedback - and ask any further questions that you might have.
-
----
-
-## Sample 4: Problem-Framework-Action
-
-You might be solving a $30 problem with a $300 solution.
-
-Let us take an example. The problem? Moving invoices from email to their accounting system.
-
-Solution: Five specialized AI agents working in perfect harmony: a classifier agent, an extraction agent, a validation agent, a routing agent, and a quality control agent.
-
-Total development time: 8 weeks. Monthly AI costs: $800. Debugging time when it breaks: "It depends which agent failed."
-
-But a basic Zapier/Make automation with one extraction step could have solved this in 2 hours for $30/month.
-
-🧠This is the multi-agent complexity trap, and teams are falling for it everywhere.
-
-The pattern is clear: teams read about multi-agent workflows and confuse sophistication with effectiveness. They build complex systems when a simple if-then automation would work better.
-
-Before building any multi-agent system, ask: Would I pay a human $500/month to do this task?
-
-If not, you're probably overengineering.
-
-The right progression:
-
-📅Week 1-2: Document the manual process
-📅Week 3-4: Build basic automation (Zapier/Make/n8n)
-📅Week 5-8: Add single agent only if automation hits limits
-📅Month 3+: Multi-agent only if single agent creates genuine bottlenecks
-
-What's one workflow in your company that someone is probably overcomplicating with agents right now? 👇
+What's one thing your current screening process genuinely can't do? 👇
 
 ---
 
-## Sample 5: Philosophical + Poetic (Reflective Style)
+## Sample 3: Founder POV + Pilot CTA — Why We Built This
 
-Anthropic's Head of Safety just resigned.
+I watched a team of 3 recruiters spend an entire Tuesday on the phone.
 
-I'm not here to speculate why.
+48 candidates. Screening calls. 15 minutes each. Back to back.
 
-What caught me is HOW he resigned. Mrinank Sharma closed his letter with William Stafford's poem, "The Way It Is."
+By 6 PM, every candidate had "passed" to the next round. Not because they were all strong. Because call fatigue hits around candidate 12, and by candidate 30, the path of least resistance is a thumbs up.
 
-"There's a thread you follow. It goes among things that change. But it doesn't change."
+That's when I started building TalentLens.
 
-This is the line that won't leave me.
+The problem isn't that recruiters are bad at their jobs. The problem is that high-volume screening is genuinely unsolvable at human scale without compromising quality somewhere.
 
-In AI, everything changes. Models every quarter. Benchmarks every month. Valuations every week. Capabilities that were impossible last year are real today.
+You either move fast and accept noise. Or you slow down and bottleneck the pipeline.
 
-But the thread — your principles, your values, the reason you're building — that shouldn't change.
+We built something that runs the screening round for you. Real-time voice. Competency-weighted rubric. Integrity check on every candidate. Structured hire/no-hire report at the end.
 
-And right now, in this age of AI, holding onto that thread has never been harder. Or more important.
+We're pre-launch. No live customers yet.
 
-"While you hold it you can't get lost."
+We're looking for 10 recruitment agencies to run their real hiring workflows through TalentLens, free, in exchange for structured feedback.
 
-In a landscape of hype cycles, billion-dollar rounds, and relentless competitive pressure: the thread is what keeps you oriented. Lose it and you're just building fast with no direction.
+If your agency screens 10+ candidates/month, comment PILOT and I'll reach out with details. 👇
 
-This wasn't a resignation. It was a reminder.
+---
 
-The world around AI will keep shifting. The models will keep getting more powerful. The pressure to move faster will only grow.
+## Sample 4: Technical Hiring Problem — The 4-Tool Problem
 
-But the thread doesn't change.
+To hire one backend developer, you typically need:
 
-Know yours. Hold it. Even when people can't see it. Especially then.
+1. A JD posted on Naukri or LinkedIn
+2. An ATS to collect applications
+3. A manual phone screen or outsourced call
+4. A coding test on HackerRank or similar
+5. A video call for the technical round
+6. A separate format to share evaluation notes with the hiring manager
 
-What's the thread you refuse to let go of?
+Six touchpoints. For one hire.
+
+The candidate experiences 4 different interfaces, 3 scheduling emails, and at least 2 moments where they consider dropping out entirely.
+
+The hiring manager gets results from 4 different tools with no shared format.
+
+The recruiter coordinates all of it manually.
+
+This is the normal state of technical hiring in 2026. And most people have just accepted it.
+
+**What we built instead:**
+
+TalentLens runs the screening and technical round in one room. Same link. Same session. Voice interview, live code editor, AI evaluation, one structured report.
+
+No HackerRank. No separate scheduling. No tab switching.
+
+Still pre-launch. Still looking for early agencies to test this with.
+
+What tool in your current hiring stack causes the most friction? 👇
+
+---
+
+## Sample 5: Direct Pilot Offer
+
+10 slots. Free credits. Real interviews.
+
+We built TalentLens: an AI that conducts live voice interviews with candidates, scores them against your competency framework, checks for proxy interviews in real time, and delivers a structured hire/no-hire report.
+
+No pre-recorded prompts. No keyword matching. No $25,000/year contract.
+
+We're pre-launch. We need real hiring workflows to validate the platform against.
+
+**The pilot deal:**
+- Free credits to screen your first 30 candidates
+- Full platform access: voice interviews, integrity suite, live code editor
+- Direct line to our founding team for support and feature requests
+- 1 feedback call per 10 candidates screened (30 minutes, structured)
+
+**Who it's for:**
+Recruitment agencies, staffing firms, or in-house HR teams running 10+ hires/month.
+
+**What you get:**
+Enterprise-grade screening. ₹0 cost for the pilot. A seat at the table to shape what gets built next.
+
+**What we get:**
+Real data. Real feedback. Our first paying customers after the pilot.
+
+10 spots. This is not a waitlist. We want 10 agencies who will actually run their hiring through this in the next 30 days.
+
+Comment PILOT or DM me. 👇
