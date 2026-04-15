@@ -41,6 +41,7 @@ Usage:
 """
 
 import argparse
+import base64
 import html
 import os
 import re
@@ -51,6 +52,19 @@ WIDTH = 1080
 HEIGHT = 1080
 BRAND_COLOR = "#6C5CE7"
 OUTPUT_ROOT = "output"
+
+
+def _load_logo_uri():
+    """Load Evolvision logo as a base64 data URI for embedding in HTML."""
+    logo_path = os.path.join(os.path.dirname(__file__), "assets", "evllogo.jpg")
+    if os.path.exists(logo_path):
+        with open(logo_path, "rb") as f:
+            data = base64.b64encode(f.read()).decode("utf-8")
+        return f"data:image/jpeg;base64,{data}"
+    return None
+
+
+LOGO_URI = _load_logo_uri()
 
 
 # ---------------------------------------------------------------------------
@@ -137,10 +151,9 @@ def framework_card_html(title, items, brand=BRAND_COLOR, hook=None, tag="Framewo
     .num{{font-size:26px;font-weight:800;color:{brand};min-width:32px;margin-top:2px}}
     .label{{font-size:26px;font-weight:700;color:#1A1A2E;margin-bottom:4px}}
     .desc{{font-size:20px;color:#64748B;line-height:1.45}}
-    .footer{{margin-top:36px;display:flex;justify-content:space-between;align-items:center}}
-    .brand{{font-size:24px;font-weight:700;color:{brand}}}
-    .brand b{{color:#1A1A2E;font-weight:800}}
-    .url{{font-size:18px;color:#94A3B8}}
+    .footer{{margin-top:36px;display:flex;align-items:center;justify-content:space-between}}
+    .logo-img{{width:52px;height:52px;object-fit:contain}}
+    .brand-text{{font-size:20px;font-weight:600;color:#64748B}}
     </style></head><body>
     <div class="bar"></div>
     <div class="tag">{e(tag)}</div>
@@ -148,8 +161,8 @@ def framework_card_html(title, items, brand=BRAND_COLOR, hook=None, tag="Framewo
     <div class="title">{e(title)}</div>
     <div class="items">{items_html}</div>
     <div class="footer">
-      <div class="brand">Talent<b>Lens</b></div>
-      <div class="url">talentlens.evolvision.com</div>
+      <div class="brand-text">Evolvision Technologies LLP</div>
+      {'<img class="logo-img" src="' + LOGO_URI + '" />' if LOGO_URI else ""}
     </div>
     </body></html>"""
 
@@ -171,14 +184,14 @@ def stat_card_html(headline, subtext, context="", brand=BRAND_COLOR):
     .sub{{font-size:34px;font-weight:600;color:rgba(255,255,255,.9);
           line-height:1.45;margin-bottom:20px;max-width:720px;position:relative;z-index:1}}
     .ctx{{font-size:24px;color:rgba(255,255,255,.55);position:relative;z-index:1}}
-    .brand{{position:absolute;bottom:56px;font-size:26px;font-weight:700;
-            color:rgba(255,255,255,.65);z-index:1}}
+    .brand{{position:absolute;bottom:56px;font-size:22px;font-weight:600;
+            color:rgba(255,255,255,.65);z-index:1;letter-spacing:.01em}}
     </style></head><body>
     <div class="c1"></div><div class="c2"></div>
     <div class="headline">{e(headline)}</div>
     <div class="sub">{e(subtext)}</div>
     {ctx}
-    <div class="brand">TalentLens</div>
+    <div class="brand">Evolvision Technologies LLP</div>
     </body></html>"""
 
 
@@ -213,10 +226,9 @@ def process_flow_html(title, steps, brand=BRAND_COLOR, hook=None, tag="Process")
           justify-content:center;flex-shrink:0}}
     .text{{font-size:28px;font-weight:600;color:#1A1A2E}}
     .connector{{width:3px;height:24px;background:{brand}35;margin-left:24px}}
-    .footer{{margin-top:36px;display:flex;justify-content:space-between;align-items:center}}
-    .brand{{font-size:24px;font-weight:700;color:{brand}}}
-    .brand b{{color:#1A1A2E;font-weight:800}}
-    .url{{font-size:18px;color:#94A3B8}}
+    .footer{{margin-top:36px;display:flex;align-items:center;gap:14px}}
+    .logo-img{{width:36px;height:36px;object-fit:contain}}
+    .brand-text{{font-size:20px;font-weight:600;color:#64748B}}
     </style></head><body>
     <div class="bar"></div>
     <div class="tag">{e(tag)}</div>
@@ -224,8 +236,8 @@ def process_flow_html(title, steps, brand=BRAND_COLOR, hook=None, tag="Process")
     <div class="title">{e(title)}</div>
     <div class="steps">{items_html}</div>
     <div class="footer">
-      <div class="brand">Talent<b>Lens</b></div>
-      <div class="url">talentlens.evolvision.com</div>
+      {'<img class="logo-img" src="' + LOGO_URI + '" />' if LOGO_URI else ""}
+      <div class="brand-text">Evolvision Technologies LLP</div>
     </div>
     </body></html>"""
 
@@ -249,16 +261,15 @@ def quote_card_html(quote, author="Jimit Joshi", brand=BRAND_COLOR):
               align-self:flex-start;margin-bottom:28px}}
     .author{{font-size:24px;font-weight:600;color:rgba(255,255,255,.55);
              align-self:flex-start;letter-spacing:.02em}}
-    .brand{{position:absolute;bottom:52px;right:72px;font-size:22px;
-            font-weight:700;color:rgba(255,255,255,.3)}}
-    .brand b{{color:rgba(255,255,255,.5);font-weight:800}}
+    .brand{{position:absolute;bottom:52px;right:72px;font-size:20px;
+            font-weight:600;color:rgba(255,255,255,.35);letter-spacing:.01em}}
     </style></head><body>
     <div class="ring1"></div><div class="ring2"></div>
     <div class="mark">"</div>
     <div class="quote">{e(quote)}</div>
     <div class="divider"></div>
     <div class="author">{e(author)}</div>
-    <div class="brand">Talent<b>Lens</b></div>
+    <div class="brand">Evolvision Technologies LLP</div>
     </body></html>"""
 
 
