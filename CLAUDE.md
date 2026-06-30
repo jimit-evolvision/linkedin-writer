@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What This Repo Is
 
-A Claude Code **skill** (slash command) for writing LinkedIn posts in Jimit Joshi's voice (CEO & Founder, Evolvision Technologies / TalentLens). The skill is customized for the TalentLens pre-launch campaign targeting Indian hiring agencies. It contains Markdown content files and one Python utility for generating post visuals locally.
+A Claude Code **skill** (slash command) for writing LinkedIn posts in Jimit Joshi's voice (CEO & Founder, Evolvision Technologies / AI Access). The skill is customized for the AI Access pre-launch campaign targeting Indian hiring agencies. It contains Markdown content files and one Python utility for generating post visuals locally.
 
 When installed at `~/.claude/skills/linkedin-writer/`, invoking `/linkedin-writer` triggers `SKILL.md` as the skill definition, which in turn references the four files in `references/`.
 

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-LinkedIn Visual Generator — TalentLens Campaign
+LinkedIn Visual Generator — AI Access Campaign
 Generates structured visuals locally using Playwright (headless Chromium).
 No external API required.
 
@@ -53,14 +53,20 @@ HEIGHT = 1080
 BRAND_COLOR = "#6C5CE7"
 OUTPUT_ROOT = "output"
 
+BG_DARK = "#0D0E1A"
+BG_CARD = "rgba(255,255,255,0.07)"
+TEXT_PRIMARY = "#FFFFFF"
+TEXT_SECONDARY = "#9CA3AF"
+TEXT_MUTED = "rgba(255,255,255,0.38)"
+
 
 def _load_logo_uri():
-    """Load Evolvision logo as a base64 data URI for embedding in HTML."""
-    logo_path = os.path.join(os.path.dirname(__file__), "assets", "evllogo.jpg")
+    """Load AI Access logo as a base64 data URI for embedding in HTML."""
+    logo_path = os.path.join(os.path.dirname(__file__), "..", "images", "logo.png")
     if os.path.exists(logo_path):
         with open(logo_path, "rb") as f:
             data = base64.b64encode(f.read()).decode("utf-8")
-        return f"data:image/jpeg;base64,{data}"
+        return f"data:image/png;base64,{data}"
     return None
 
 
@@ -122,6 +128,14 @@ def e(text):
     return html.escape(str(text))
 
 
+def _footer_html():
+    logo = f'<img class="logo-img" src="{LOGO_URI}" />' if LOGO_URI else '<span class="logo-fallback">AI Assess</span>'
+    return f"""<div class="footer">
+      {logo}
+      <div class="brand-text">AI enabled Assessment Platform</div>
+    </div>"""
+
+
 def framework_card_html(title, items, brand=BRAND_COLOR, hook=None, tag="Framework"):
     items_html = "".join(
         f"""<div class="item">
@@ -136,34 +150,38 @@ def framework_card_html(title, items, brand=BRAND_COLOR, hook=None, tag="Framewo
     hook_html = f'<div class="hook">{e(hook)}</div>' if hook else ""
     return f"""<!DOCTYPE html><html><head><meta charset="utf-8"><style>
     *{{margin:0;padding:0;box-sizing:border-box}}
-    body{{width:{WIDTH}px;height:{HEIGHT}px;background:#fff;
+    body{{width:{WIDTH}px;height:{HEIGHT}px;background:{BG_DARK};
          font-family:'Segoe UI','Helvetica Neue',Arial,sans-serif;
          display:flex;flex-direction:column;padding:72px;position:relative;overflow:hidden}}
-    .bar{{position:absolute;top:0;left:0;right:0;height:8px;background:{brand}}}
+    .bar{{position:absolute;top:0;left:0;right:0;height:6px;background:{brand}}}
+    .glow{{position:absolute;top:-200px;right:-200px;width:600px;height:600px;
+           border-radius:50%;background:radial-gradient(circle,{brand}22 0%,transparent 70%);pointer-events:none}}
     .tag{{display:inline-block;background:{brand};color:#fff;font-size:20px;
           font-weight:700;letter-spacing:.1em;text-transform:uppercase;
           padding:8px 20px;border-radius:6px;margin-bottom:16px;align-self:flex-start}}
-    .hook{{font-size:25px;font-weight:600;color:#EF4444;margin-bottom:14px;line-height:1.3}}
-    .title{{font-size:50px;font-weight:800;color:#1A1A2E;line-height:1.15;margin-bottom:44px;max-width:880px}}
-    .items{{display:flex;flex-direction:column;gap:20px;flex:1}}
+    .hook{{font-size:25px;font-weight:700;color:#0D0E1A;background:#FFE566;
+           display:inline-block;align-self:flex-start;
+           padding:4px 12px;border-radius:4px;margin-bottom:16px;line-height:1.4}}
+    .title{{font-size:50px;font-weight:800;color:{TEXT_PRIMARY};line-height:1.15;margin-bottom:44px;max-width:880px}}
+    .items{{display:flex;flex-direction:column;gap:18px;flex:1}}
     .item{{display:flex;align-items:flex-start;gap:22px;
-           padding:26px 28px;background:#F5F3FF;border-radius:14px;border-left:5px solid {brand}}}
+           padding:24px 28px;background:{BG_CARD};border-radius:14px;
+           border-left:5px solid {brand};backdrop-filter:blur(10px)}}
     .num{{font-size:26px;font-weight:800;color:{brand};min-width:32px;margin-top:2px}}
-    .label{{font-size:26px;font-weight:700;color:#1A1A2E;margin-bottom:4px}}
-    .desc{{font-size:20px;color:#64748B;line-height:1.45}}
-    .footer{{margin-top:36px;display:flex;align-items:center;justify-content:space-between}}
-    .logo-img{{width:52px;height:52px;object-fit:contain}}
-    .brand-text{{font-size:20px;font-weight:600;color:#64748B}}
+    .label{{font-size:26px;font-weight:700;color:{TEXT_PRIMARY};margin-bottom:4px}}
+    .desc{{font-size:20px;color:{TEXT_SECONDARY};line-height:1.45}}
+    .footer{{margin-top:32px;display:flex;align-items:center;justify-content:space-between}}
+    .logo-img{{height:72px;object-fit:contain}}
+    .logo-fallback{{font-size:22px;font-weight:800;color:#fff}}
+    .brand-text{{font-size:18px;font-weight:500;color:{TEXT_MUTED};letter-spacing:.02em}}
     </style></head><body>
     <div class="bar"></div>
+    <div class="glow"></div>
     <div class="tag">{e(tag)}</div>
     {hook_html}
     <div class="title">{e(title)}</div>
     <div class="items">{items_html}</div>
-    <div class="footer">
-      <div class="brand-text">Evolvision Technologies LLP</div>
-      {'<img class="logo-img" src="' + LOGO_URI + '" />' if LOGO_URI else ""}
-    </div>
+    {_footer_html()}
     </body></html>"""
 
 
@@ -171,27 +189,36 @@ def stat_card_html(headline, subtext, context="", brand=BRAND_COLOR):
     ctx = f'<div class="ctx">{e(context)}</div>' if context else ""
     return f"""<!DOCTYPE html><html><head><meta charset="utf-8"><style>
     *{{margin:0;padding:0;box-sizing:border-box}}
-    body{{width:{WIDTH}px;height:{HEIGHT}px;background:{brand};
+    body{{width:{WIDTH}px;height:{HEIGHT}px;
+         background:linear-gradient(135deg,{BG_DARK} 0%,#14102A 100%);
          font-family:'Segoe UI','Helvetica Neue',Arial,sans-serif;
-         display:flex;flex-direction:column;align-items:center;
-         justify-content:center;text-align:center;padding:80px;position:relative;overflow:hidden}}
+         display:flex;flex-direction:column;padding:80px;position:relative;overflow:hidden}}
     .c1{{position:absolute;width:720px;height:720px;border-radius:50%;
-         background:rgba(255,255,255,.06);top:-250px;right:-250px}}
+         background:radial-gradient(circle,{brand}28 0%,transparent 70%);
+         top:-250px;right:-250px;pointer-events:none}}
     .c2{{position:absolute;width:400px;height:400px;border-radius:50%;
-         background:rgba(255,255,255,.04);bottom:-120px;left:-120px}}
+         background:radial-gradient(circle,{brand}18 0%,transparent 70%);
+         bottom:-120px;left:-120px;pointer-events:none}}
+    .content{{flex:1;display:flex;flex-direction:column;align-items:center;
+              justify-content:center;text-align:center;position:relative;z-index:1}}
     .headline{{font-size:148px;font-weight:900;color:#fff;line-height:1;
-               letter-spacing:-.03em;margin-bottom:28px;position:relative;z-index:1}}
+               letter-spacing:-.03em;margin-bottom:28px}}
     .sub{{font-size:34px;font-weight:600;color:rgba(255,255,255,.9);
-          line-height:1.45;margin-bottom:20px;max-width:720px;position:relative;z-index:1}}
-    .ctx{{font-size:24px;color:rgba(255,255,255,.55);position:relative;z-index:1}}
-    .brand{{position:absolute;bottom:56px;font-size:22px;font-weight:600;
-            color:rgba(255,255,255,.65);z-index:1;letter-spacing:.01em}}
+          line-height:1.45;margin-bottom:20px;max-width:720px}}
+    .ctx{{font-size:24px;color:rgba(255,255,255,.45)}}
+    .footer{{display:flex;align-items:center;justify-content:space-between;
+             position:relative;z-index:1}}
+    .logo-img{{height:72px;object-fit:contain}}
+    .logo-fallback{{font-size:22px;font-weight:800;color:#fff}}
+    .brand-text{{font-size:18px;font-weight:500;color:{TEXT_MUTED};letter-spacing:.02em}}
     </style></head><body>
     <div class="c1"></div><div class="c2"></div>
-    <div class="headline">{e(headline)}</div>
-    <div class="sub">{e(subtext)}</div>
-    {ctx}
-    <div class="brand">Evolvision Technologies LLP</div>
+    <div class="content">
+      <div class="headline">{e(headline)}</div>
+      <div class="sub">{e(subtext)}</div>
+      {ctx}
+    </div>
+    {_footer_html()}
     </body></html>"""
 
 
@@ -210,66 +237,77 @@ def process_flow_html(title, steps, brand=BRAND_COLOR, hook=None, tag="Process")
     hook_html = f'<div class="hook">{e(hook)}</div>' if hook else ""
     return f"""<!DOCTYPE html><html><head><meta charset="utf-8"><style>
     *{{margin:0;padding:0;box-sizing:border-box}}
-    body{{width:{WIDTH}px;height:{HEIGHT}px;background:#fff;
+    body{{width:{WIDTH}px;height:{HEIGHT}px;background:{BG_DARK};
          font-family:'Segoe UI','Helvetica Neue',Arial,sans-serif;
          display:flex;flex-direction:column;padding:72px;position:relative;overflow:hidden}}
-    .bar{{position:absolute;top:0;left:0;right:0;height:8px;background:{brand}}}
+    .bar{{position:absolute;top:0;left:0;right:0;height:6px;background:{brand}}}
+    .glow{{position:absolute;top:-200px;right:-200px;width:600px;height:600px;
+           border-radius:50%;background:radial-gradient(circle,{brand}22 0%,transparent 70%);pointer-events:none}}
     .tag{{display:inline-block;background:{brand};color:#fff;font-size:20px;
           font-weight:700;letter-spacing:.1em;text-transform:uppercase;
           padding:8px 20px;border-radius:6px;margin-bottom:16px;align-self:flex-start}}
-    .hook{{font-size:25px;font-weight:600;color:#EF4444;margin-bottom:14px;line-height:1.3}}
-    .title{{font-size:46px;font-weight:800;color:#1A1A2E;line-height:1.2;margin-bottom:44px}}
+    .hook{{font-size:25px;font-weight:700;color:#0D0E1A;background:#FFE566;
+           display:inline-block;align-self:flex-start;
+           padding:4px 12px;border-radius:4px;margin-bottom:16px;line-height:1.4}}
+    .title{{font-size:46px;font-weight:800;color:{TEXT_PRIMARY};line-height:1.2;margin-bottom:44px}}
     .steps{{display:flex;flex-direction:column;flex:1;justify-content:center}}
     .step{{display:flex;align-items:center;gap:22px}}
     .num{{width:50px;height:50px;border-radius:50%;background:{brand};color:#fff;
           font-size:22px;font-weight:800;display:flex;align-items:center;
           justify-content:center;flex-shrink:0}}
-    .text{{font-size:28px;font-weight:600;color:#1A1A2E}}
-    .connector{{width:3px;height:24px;background:{brand}35;margin-left:24px}}
-    .footer{{margin-top:36px;display:flex;align-items:center;gap:14px}}
-    .logo-img{{width:36px;height:36px;object-fit:contain}}
-    .brand-text{{font-size:20px;font-weight:600;color:#64748B}}
+    .text{{font-size:28px;font-weight:600;color:{TEXT_PRIMARY}}}
+    .connector{{width:3px;height:24px;background:{brand}55;margin-left:24px}}
+    .footer{{margin-top:32px;display:flex;align-items:center;justify-content:space-between}}
+    .logo-img{{height:72px;object-fit:contain}}
+    .logo-fallback{{font-size:22px;font-weight:800;color:#fff}}
+    .brand-text{{font-size:18px;font-weight:500;color:{TEXT_MUTED};letter-spacing:.02em}}
     </style></head><body>
     <div class="bar"></div>
+    <div class="glow"></div>
     <div class="tag">{e(tag)}</div>
     {hook_html}
     <div class="title">{e(title)}</div>
     <div class="steps">{items_html}</div>
-    <div class="footer">
-      {'<img class="logo-img" src="' + LOGO_URI + '" />' if LOGO_URI else ""}
-      <div class="brand-text">Evolvision Technologies LLP</div>
-    </div>
+    {_footer_html()}
     </body></html>"""
 
 
 def quote_card_html(quote, author="Jimit Joshi", brand=BRAND_COLOR):
     return f"""<!DOCTYPE html><html><head><meta charset="utf-8"><style>
     *{{margin:0;padding:0;box-sizing:border-box}}
-    body{{width:{WIDTH}px;height:{HEIGHT}px;background:#1A1A2E;
+    body{{width:{WIDTH}px;height:{HEIGHT}px;background:{BG_DARK};
          font-family:'Segoe UI','Helvetica Neue',Arial,sans-serif;
-         display:flex;flex-direction:column;align-items:center;
-         justify-content:center;padding:96px;position:relative;overflow:hidden}}
+         display:flex;flex-direction:column;padding:96px;position:relative;overflow:hidden}}
     .ring1{{position:absolute;width:800px;height:800px;border-radius:50%;
-            border:1px solid rgba(255,255,255,.05);top:-300px;right:-300px}}
+            border:1px solid {brand}22;top:-300px;right:-300px}}
     .ring2{{position:absolute;width:500px;height:500px;border-radius:50%;
-            border:1px solid rgba(255,255,255,.04);bottom:-200px;left:-200px}}
+            border:1px solid {brand}15;bottom:-200px;left:-200px}}
+    .glow{{position:absolute;top:-150px;right:-150px;width:500px;height:500px;
+           border-radius:50%;background:radial-gradient(circle,{brand}20 0%,transparent 70%);pointer-events:none}}
+    .content{{flex:1;display:flex;flex-direction:column;justify-content:center;position:relative;z-index:1}}
     .mark{{font-size:160px;font-weight:900;color:{brand};line-height:.8;
            align-self:flex-start;margin-bottom:8px;opacity:.7}}
-    .quote{{font-size:46px;font-weight:700;color:#FFFFFF;line-height:1.35;
-            text-align:left;margin-bottom:48px;position:relative;z-index:1}}
+    .quote{{font-size:46px;font-weight:700;color:{TEXT_PRIMARY};line-height:1.35;
+            text-align:left;margin-bottom:48px}}
     .divider{{width:64px;height:4px;background:{brand};border-radius:2px;
               align-self:flex-start;margin-bottom:28px}}
-    .author{{font-size:24px;font-weight:600;color:rgba(255,255,255,.55);
+    .author{{font-size:24px;font-weight:600;color:rgba(255,255,255,.5);
              align-self:flex-start;letter-spacing:.02em}}
-    .brand{{position:absolute;bottom:52px;right:72px;font-size:20px;
-            font-weight:600;color:rgba(255,255,255,.35);letter-spacing:.01em}}
+    .footer{{display:flex;align-items:center;justify-content:space-between;
+             position:relative;z-index:1}}
+    .logo-img{{height:72px;object-fit:contain}}
+    .logo-fallback{{font-size:22px;font-weight:800;color:#fff}}
+    .brand-text{{font-size:18px;font-weight:500;color:{TEXT_MUTED};letter-spacing:.02em}}
     </style></head><body>
     <div class="ring1"></div><div class="ring2"></div>
-    <div class="mark">"</div>
-    <div class="quote">{e(quote)}</div>
-    <div class="divider"></div>
-    <div class="author">{e(author)}</div>
-    <div class="brand">Evolvision Technologies LLP</div>
+    <div class="glow"></div>
+    <div class="content">
+      <div class="mark">"</div>
+      <div class="quote">{e(quote)}</div>
+      <div class="divider"></div>
+      <div class="author">{e(author)}</div>
+    </div>
+    {_footer_html()}
     </body></html>"""
 
 
@@ -312,7 +350,7 @@ def parse_items(raw):
 
 
 def main():
-    p = argparse.ArgumentParser(description="Generate LinkedIn visuals for TalentLens.")
+    p = argparse.ArgumentParser(description="Generate LinkedIn visuals for AI Access.")
     sub = p.add_subparsers(dest="type", required=True)
 
     fw = sub.add_parser("framework")

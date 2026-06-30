@@ -1,6 +1,6 @@
-# Content Pillars — Jimit Joshi / TalentLens
+# Content Pillars — Jimit Joshi / AI Access
 
-5 pillars for Jimit's LinkedIn presence as CEO & Founder of Evolvision Technologies, building TalentLens. Every post falls under one of these pillars. The campaign goal is to build awareness, establish credibility in AI hiring, and onboard pilot agencies.
+5 pillars for Jimit's LinkedIn presence as CEO & Founder of Evolvision Technologies, building AI Access. Every post falls under one of these pillars. The campaign goal is to build awareness, establish credibility in AI hiring, and onboard pilot agencies.
 
 ---
 
@@ -40,7 +40,7 @@
 
 ---
 
-## Pillar 3: Building TalentLens — Founder POV (~20% of posts)
+## Pillar 3: Building AI Access — Founder POV (~20% of posts)
 
 **Core promise:** Transparent, honest building in public. What we decided, why we decided it, what we got wrong.
 

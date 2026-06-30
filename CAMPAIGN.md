@@ -1,6 +1,6 @@
-# TalentLens LinkedIn Campaign Plan
+# AI Access LinkedIn Campaign Plan
 
-**Product:** TalentLens — AI-powered real-time voice interview platform  
+**Product:** AI Access (Powered by Evolvision) — AI-powered real-time voice interview platform  
 **Company:** Evolvision Technologies LLP  
 **Author:** Jimit Joshi (CEO & Founder)  
 **Campaign goal:** Build awareness among Indian hiring agencies. Onboard 10 pilot partners.  
@@ -24,7 +24,7 @@
 ---
 
 ### Phase 2: Frame the Category (Weeks 3-4)
-**Goal:** Introduce what good AI screening looks like. Light TalentLens mention where it fits naturally.
+**Goal:** Introduce what good AI screening looks like. Light AI Access mention where it fits naturally.
 
 | # | Post Topic | Pillar | CTA Type |
 |---|---|---|---|
@@ -95,7 +95,7 @@ When Post 10 (direct pilot offer) goes live, consider a small LinkedIn Ads boost
 
 ---
 
-## TalentLens Differentiators to Weave In (by post, not all at once)
+## AI Access Differentiators to Weave In (by post, not all at once)
 
 | Differentiator | When to use |
 |---|---|
@@ -111,7 +111,7 @@ When Post 10 (direct pilot offer) goes live, consider a small LinkedIn Ads boost
 
 1. **Hiring Pain Points & Industry Reality** (~30%) — Real problems, real numbers, no product mention
 2. **AI in Hiring — Contrarian Takes** (~25%) — What the market gets wrong, backed by specifics
-3. **Building TalentLens — Founder POV** (~20%) — Transparent building-in-public narrative
+3. **Building AI Access — Founder POV** (~20%) — Transparent building-in-public narrative
 4. **Technical Hiring Realities** (~15%) — Tool fragmentation, code tests, evaluation quality
 5. **Indian Hiring Market** (~10%) — India-first context, ₹ pricing, volume problem
 
@@ -120,7 +120,7 @@ When Post 10 (direct pilot offer) goes live, consider a small LinkedIn Ads boost
 ## What "Done" Looks Like
 
 **Pilot phase complete when:**
-- 10 agencies are running real hiring workflows through TalentLens
+- 10 agencies are running real hiring workflows through AI Access
 - Each has completed at least one feedback call
 - At least 3 have given a quotable reaction (even informal)
 

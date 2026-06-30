@@ -71,7 +71,7 @@ def status():
     pending_count = generated_count - posted_count
 
     print()
-    print(f"  TalentLens LinkedIn Campaign — Post Tracker")
+    print(f"  AI Access LinkedIn Campaign — Post Tracker")
     print(f"  {generated_count} generated  |  {posted_count} posted  |  {pending_count} pending")
     print()
 

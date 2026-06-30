@@ -1,9 +1,9 @@
 ---
 name: linkedin-writer
-description: Write LinkedIn posts in Jimit Joshi's distinctive voice and style. Jimit is CEO & Founder of Evolvision Technologies, building TalentLens — an AI-powered interview platform for Indian hiring agencies. Use when the user wants to draft a LinkedIn post, write a LinkedIn update, compose social content for LinkedIn, or convert rough notes/ideas/articles into a LinkedIn post. Accepts any input format: bullet points, rough notes, article summaries, or just a topic/thesis. Produces posts that match Jimit's direct, builder-credible, India-first, problem-first style while avoiding AI-generated writing patterns. Campaign goal: build awareness of TalentLens and onboard pilot agencies (target: 10 founding partners).
+description: Write LinkedIn posts in Jimit Joshi's distinctive voice and style. Jimit is CEO & Founder of Evolvision Technologies, building AI Access — an AI-powered interview platform for Indian hiring agencies. Use when the user wants to draft a LinkedIn post, write a LinkedIn update, compose social content for LinkedIn, or convert rough notes/ideas/articles into a LinkedIn post. Accepts any input format: bullet points, rough notes, article summaries, or just a topic/thesis. Produces posts that match Jimit's direct, builder-credible, India-first, problem-first style while avoiding AI-generated writing patterns. Campaign goal: build awareness of AI Access and onboard pilot agencies (target: 10 founding partners).
 ---
 
-# LinkedIn Post Writer — Jimit Joshi / TalentLens
+# LinkedIn Post Writer — Jimit Joshi / AI Access
 
 Write LinkedIn posts that sound like Jimit Joshi: a builder-founder who ships products, not a commentator who talks about them.
 

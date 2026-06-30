@@ -1,0 +1,29 @@
+Your recruiter spent 12 hours on screening calls this week.
+
+On paper, that's 48 candidates at 15 minutes each.
+
+Except nobody screens 48 candidates in 12 hours.
+
+The real number is closer to 28. And by candidate 15, the quality of decisions is already slipping.
+
+Here's where the time actually goes:
+
+The Screening Hour Stack
+
+1. Scheduling drag: Finding a slot, sending a link, chasing WhatsApp replies. 5-8 minutes per candidate before the call even starts.
+2. No-show tax: 20-30% of candidates don't show. You wait, follow up, or mark the slot wasted.
+3. The call itself: 15 minutes when it goes cleanly. 25 when the candidate runs long or the connection drops.
+4. Documentation lag: 5-10 minutes of notes while memory is fresh. Skip this and you're shortlisting on gut, not data.
+5. Fatigue multiplier: After 10-12 back-to-back calls, the bar for "good enough" quietly drops. You stop probing.
+
+Real time per screened candidate: 35-45 minutes. Not 15.
+
+For an agency screening 60-80 candidates/month, that's 35-60 hours of recruiter time on screening alone. At market rates, that's ₹10,000-17,000 before a single shortlist reaches the client.
+
+That cost is on the timesheet.
+
+The quality problem isn't.
+
+The first 10 screens in a session produce sharp calls. The last 10 produce noise. Your client receives a mix of both in the same shortlist.
+
+Share this with an agency head who's still doing manual phone screens.

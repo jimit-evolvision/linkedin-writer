@@ -59,7 +59,7 @@ Most posts follow this skeleton:
 1. **Hook** (1-2 lines) — Observable problem moment or contrarian claim
 2. **Problem/Context** (2-4 short paragraphs) — Why this happens, what it costs, who it affects
 3. **Named Framework** (core) — A titled framework, checklist, or breakdown with 3-5 items
-4. **TalentLens connection** (optional, 1-2 lines) — Light mention only when earned by the post's argument
+4. **AI Access connection** (optional, 1-2 lines) — Light mention only when earned by the post's argument
 5. **Closing CTA** — Engagement question, repost prompt, or PILOT comment CTA
 
 ## Frameworks Are the Credibility Signal
@@ -68,11 +68,11 @@ Most posts follow this skeleton:
 - 3-5 items, each with a bold label and a dash explanation.
 - Frameworks build shareability: hiring managers forward frameworks to their teams.
 
-## TalentLens Mention Rules
+## AI Access Mention Rules
 - **Awareness posts (Phase 1):** No product mention. Build the problem. Let the credibility land first.
 - **Education posts (Phase 2):** Light mention only if the post naturally arrives at the solution. "What we built" framing, not "our product."
 - **Pilot posts (Phase 3):** Direct and clear. Name the offer, name the terms, name the CTA.
-- Never open a post with TalentLens. The product earns its mention by the end.
+- Never open a post with AI Access. The product earns its mention by the end.
 
 ## Emoji Usage Rules
 Strategic, not decorative:

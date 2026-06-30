@@ -1,4 +1,4 @@
-# Sample Posts — Jimit Joshi / TalentLens
+# Sample Posts — Jimit Joshi / AI Access
 
 5 calibration posts showing the target voice and style for this campaign. Use these for tone matching, not as templates to copy. These represent the voice Jimit is building toward: direct, India-aware, builder-credible, problem-first.
 
@@ -67,7 +67,7 @@ I watched a team of 3 recruiters spend an entire Tuesday on the phone.
 
 By 6 PM, every candidate had "passed" to the next round. Not because they were all strong. Because call fatigue hits around candidate 12, and by candidate 30, the path of least resistance is a thumbs up.
 
-That's when I started building TalentLens.
+That's when I started building AI Access.
 
 The problem isn't that recruiters are bad at their jobs. The problem is that high-volume screening is genuinely unsolvable at human scale without compromising quality somewhere.
 
@@ -77,7 +77,7 @@ We built something that runs the screening round for you. Real-time voice. Compe
 
 We're pre-launch. No live customers yet.
 
-We're looking for 10 recruitment agencies to run their real hiring workflows through TalentLens, free, in exchange for structured feedback.
+We're looking for 10 recruitment agencies to run their real hiring workflows through AI Access, free, in exchange for structured feedback.
 
 If your agency screens 10+ candidates/month, comment PILOT and I'll reach out with details. 👇
 
@@ -106,7 +106,7 @@ This is the normal state of technical hiring in 2026. And most people have just 
 
 **What we built instead:**
 
-TalentLens runs the screening and technical round in one room. Same link. Same session. Voice interview, live code editor, AI evaluation, one structured report.
+AI Access runs the screening and technical round in one room. Same link. Same session. Voice interview, live code editor, AI evaluation, one structured report.
 
 No HackerRank. No separate scheduling. No tab switching.
 
@@ -120,7 +120,7 @@ What tool in your current hiring stack causes the most friction? 👇
 
 10 slots. Free credits. Real interviews.
 
-We built TalentLens: an AI that conducts live voice interviews with candidates, scores them against your competency framework, checks for proxy interviews in real time, and delivers a structured hire/no-hire report.
+We built AI Access (Powered by Evolvision): an AI that conducts live voice interviews with candidates, scores them against your competency framework, checks for proxy interviews in real time, and delivers a structured hire/no-hire report.
 
 No pre-recorded prompts. No keyword matching. No $25,000/year contract.
 

@@ -46,7 +46,7 @@ Snap the reader in the OPPOSITE direction of the initial lean-in.
 
 ---
 
-## TalentLens Campaign Hook Examples
+## AI Access Campaign Hook Examples
 
 **Proxy interview hook:**
 - Lean-in: "Your next hire might not be the person you interviewed." (stuns, establishes topic)
@@ -113,6 +113,6 @@ LinkedIn-specific adaptations:
 
 2. **The curiosity loop must survive the fold.** Scroll stop or snapback should land RIGHT at the fold boundary.
 
-3. **Benefit/pain framing beats topic framing.** "How TalentLens works" (topic) vs "Your phone screen queue has a proxy problem" (pain). Lead with what it means for THEM.
+3. **Benefit/pain framing beats topic framing.** "How AI Access works" (topic) vs "Your phone screen queue has a proxy problem" (pain). Lead with what it means for THEM.
 
 4. **For pilot posts:** Directness IS the hook. No slow build. "10 slots. Free credits." opens. The rest is the argument.
